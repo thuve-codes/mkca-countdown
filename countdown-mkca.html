@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MKCA - Soon</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="./logo.jpg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Serif:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#1a1a1a] dark justify-between group/design-root overflow-x-hidden"
+      style="font-family: 'Noto Serif', 'Noto Sans', sans-serif"
+    >
+      <div>
+        <div class="@container">
+          <div class="@[480px]:px-4 @[480px]:py-3">
+            <div
+              class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-[#1a1a1a] @[480px]:rounded-xl min-h-80"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-jEVsK75Z42TQ1f0kt5ZUnz3y59V0k0rjsk1-9G0vsQmYM_kI3GlmIqpNZ9JxWulERwpyh-tG3VHec26styK4N2Y2NJrW_Cf1x8jzFthU9NGb2-S-67n9Wd7wt05zf6o3TA2az3kTDoqtRY08V6ZOHlpBcFhzIV-3b7bZLwn2CN1CTLF_zk1V5tkAcbTMMb4Mg6sWNZKAjXIzEPUEYfM6sBIV-cSY33hs05Pv0bWsTckLAyZPqRKVOeOlfyCRsV3Jrym6zIHOem8');
+              "
+            ></div>
+          </div>
+        </div>
+
+        <h2
+          class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5"
+        >
+          Magical Knight Chess Academy
+        </h2>
+        <p
+          class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center"
+        >
+          Sharpen Your Mind. Master the Game.
+        </p>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="flex gap-4 py-6 px-4">
+          <div class="flex grow basis-0 flex-col items-stretch gap-4">
+            <div
+              class="flex h-14 grow items-center justify-center rounded-xl px-3 bg-[#363636]"
+            >
+              <p
+                id="days"
+                class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+              >
+                0
+              </p>
+            </div>
+            <div class="flex items-center justify-center">
+              <p class="text-white text-sm font-normal leading-normal">Days</p>
+            </div>
+          </div>
+          <div class="flex grow basis-0 flex-col items-stretch gap-4">
+            <div
+              class="flex h-14 grow items-center justify-center rounded-xl px-3 bg-[#363636]"
+            >
+              <p
+                id="hours"
+                class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+              >
+                0
+              </p>
+            </div>
+            <div class="flex items-center justify-center">
+              <p class="text-white text-sm font-normal leading-normal">Hours</p>
+            </div>
+          </div>
+          <div class="flex grow basis-0 flex-col items-stretch gap-4">
+            <div
+              class="flex h-14 grow items-center justify-center rounded-xl px-3 bg-[#363636]"
+            >
+              <p
+                id="minutes"
+                class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+              >
+                0
+              </p>
+            </div>
+            <div class="flex items-center justify-center">
+              <p class="text-white text-sm font-normal leading-normal">
+                Minutes
+              </p>
+            </div>
+          </div>
+          <div class="flex grow basis-0 flex-col items-stretch gap-4">
+            <div
+              class="flex h-14 grow items-center justify-center rounded-xl px-3 bg-[#363636]"
+            >
+              <p
+                id="seconds"
+                class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+              >
+                0
+              </p>
+            </div>
+            <div class="flex items-center justify-center">
+              <p class="text-white text-sm font-normal leading-normal">
+                Seconds
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p
+          class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center"
+        >
+          We're building something amazing for all chess lovers. Our academy is
+          launching soon to bring world-class chess training right to your
+          screen!
+        </p>
+      </div>
+
+      <div class="text-center">
+        <p
+          class="text-[#adadad] text-sm font-normal leading-normal pb-1 pt-1 px-4"
+        >
+          © 2025 Magical Knight Chess Academy. All rights reserved.
+        </p>
+        <p class="text-[#adadad] text-sm font-normal leading-normal pb-3 px-4">
+          Developed with ❤️ by
+          <a href="https://github.com/thuve-codes" class="underline"
+            >thuve-codes</a
+          >
+        </p>
+        <div class="h-5 bg-[#1a1a1a]"></div>
+      </div>
+    </div>
+
+    <script>
+      const countdown = () => {
+        const end = new Date("June 21, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = end - now;
+
+        if (distance < 0) {
+          document.getElementById("countdown").innerHTML =
+            "<p class='text-white text-lg text-center w-full'>Launched!</p>";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+      };
+
+      countdown();
+      setInterval(countdown, 1000);
+    </script>
+  </body>
+</html>
