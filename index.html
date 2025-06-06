@@ -524,9 +524,13 @@
     <footer id="contact" class="relative z-10 w-full py-12 px-4 mt-20">
       <div class="max-w-6xl mx-auto">
         <div class="glass-strong rounded-3xl p-8 md:p-12">
+          <!-- Main Grid -->
           <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <!-- Left Section -->
             <div class="text-center md:text-left">
-              <h3 class="font-serif text-2xl font-bold text-chess-accent mb-4">
+              <h3
+                class="font-serif text-2xl font-bold text-chess-accent mb-4 flex items-center justify-center md:justify-start"
+              >
                 <i class="fas fa-chess-knight mr-2"></i>
                 Magical Knight Chess Academy
               </h3>
@@ -534,18 +538,27 @@
                 Elevating minds through the royal game of chess.
               </p>
             </div>
+
+            <!-- Empty center column (optional for symmetry) -->
+            <div class="hidden md:block"></div>
+
+            <!-- Right Section -->
             <div class="text-center md:text-right">
               <h4 class="font-semibold text-chess-light mb-4">Contact Info</h4>
-
-              <p class="text-chess-light/80">
-                <i class="fas fa-phone mr-2 text-chess-accent"></i>
-                +94 75 317 5528 - Tharsikan.V<br />
-                <i class="fas fa-phone mr-2 text-chess-accent"></i>
-                +94 77 527 3514 - Dishanthan.V
-              </p>
+              <div class="text-chess-light/80 space-y-2">
+                <div class="flex items-center justify-center md:justify-end">
+                  <i class="fas fa-phone mr-2 text-chess-accent"></i>
+                  <span>+94 75 317 5528 – Tharsikan.V</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-end">
+                  <i class="fas fa-phone mr-2 text-chess-accent"></i>
+                  <span>+94 77 527 3514 – Dishanthan.V</span>
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- Bottom Section -->
           <div class="border-t border-chess-accent/20 pt-8 text-center">
             <p class="text-chess-light/70 mb-4">
               © 2025 Magical Knight Chess Academy. All rights reserved.
